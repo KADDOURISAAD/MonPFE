@@ -1,0 +1,47 @@
+/* Custom CSS for styling */
+.custom-checkbox-label {
+    margin-right: 10px; /* Adjust margin as needed */
+    display: inline-block;
+    width: 50px; /* Width of the label */
+  }
+
+  /* Hide default checkbox appearance */
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  /* Style for custom checkbox */
+  .custom-checkbox {
+    width: 20px; /* Width of the checkbox */
+    height: 20px; /* Height of the checkbox */
+    border: 2px solid #adb5bd; /* Border color */
+    border-radius: 4px; /* Border radius */
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* Style for checked state */
+  .custom-checkbox.checked {
+    background-color: #007bff; /* Background color when checked */
+    border-color: #007bff; /* Border color when checked */
+  }
+
+  /* Style for inner checkmark */
+  .custom-checkbox .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px; /* Width of the inner checkmark */
+    height: 10px; /* Height of the inner checkmark */
+    border-radius: 50%;
+    background-color: #fff; /* Background color of checkmark */
+    display: none;
+  }
+
+  /* Style for inner checkmark when checked */
+  .custom-checkbox.checked .checkmark {
+    display: block;
+  }
